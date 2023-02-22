@@ -1,0 +1,65 @@
+@import "./base.css";
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+
+.social-media__icon:hover path {
+  fill: #b8926b;
+}
+
+.social-media__icon:hover circle {
+  stroke: #b8926b;
+}
+
+@media screen and (max-width: 768px) {
+  .social-media__icon:hover path {
+    fill: var(--color-smoky-white);
+  }
+
+  .social-media__icon:hover circle {
+    stroke: var(--color-smoky-white);
+  }
+
+  .social-media__icon path {
+    fill: var(--color-smoky-white);
+  }
+
+  .social-media__icon circle {
+    stroke: var(--color-smoky-white);
+  }
+
+  .social-media {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    margin-top: 32px;
+    margin-bottom: 16px;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+  }
+
+  .social-media__icon {
+    width: 30px;
+    height: 30px;
+  }
+}

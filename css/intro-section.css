@@ -1,0 +1,126 @@
+@import "./base.css";
+
+.intro {
+  margin-top: 44px;
+}
+
+.intro .container {
+  display: flex;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+
+.intro__content {
+  position: relative;
+  margin-right: 44px;
+}
+
+.intro__title {
+  margin-top: 85px;
+  margin-bottom: 32px;
+  z-index: 2;
+  position: relative;
+}
+
+.intro__text {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 300;
+  color: var(--color-almost-black);
+
+  margin-bottom: 64px;
+  width: 570px;
+}
+
+.intro__graphic {
+  position: absolute;
+  top: 0;
+  left: -105px;
+  z-index: 1;
+}
+
+.intro__image {
+  display: flex;
+  align-items: flex-end;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+}
+
+.intro__image .social-media {
+  margin-left: 37px;
+}
+
+.intro-image__img {
+  width: 337px;
+  height: 460px;
+}
+
+@media screen and (max-width: 768px) {
+  .intro .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+  }
+
+  .intro__content {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+  }
+
+  .intro__text {
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-bottom: 32px;
+    width: auto;
+    text-align: center;
+  }
+
+  .intro__graphic {
+    width: 252px;
+    height: 159px;
+    top: 0;
+    left: -80px;
+  }
+
+  .intro__title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .intro__graphic {
+    display: none;
+  }
+
+  .intro {
+    margin-top: 64px;
+  }
+
+  .intro__title {
+    margin-top: 0px;
+    margin-bottom: 16px;
+  }
+}
